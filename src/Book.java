@@ -25,8 +25,9 @@ public class Book {
         this.year=year;
     }
 
-    public String authorToString(Author author){
-        String nameAuthor = author.getFirstName() + " " + author.getLastName();
+    public String authorToString(){
+        String nameAuthor =getAuthor().getFirstName() + " " + getAuthor().getLastName();
         return nameAuthor;
     }
+
 }

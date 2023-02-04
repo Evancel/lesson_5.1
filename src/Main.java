@@ -8,11 +8,11 @@ public class Main {
         System.out.println("Harry Potter: " + harryPotter.getName() + " " +
                 harryPotter.getAuthor() + " " + harryPotter.getYear());
         //распечатка в привычном виде
-        System.out.println("Harry Potter: " + harryPotter.getName() + " " + joanneRowling.getFirstName() + " " +
-                joanneRowling.getLastName() + " " + harryPotter.getYear());
+        System.out.println("Harry Potter: " + harryPotter.getName() + " " + harryPotter.getAuthor().getFirstName() + " " +
+                harryPotter.getAuthor().getLastName() + " " + harryPotter.getYear());
         //распечатка через метод ОК / не ОК ?
         System.out.println("Harry Potter: " + harryPotter.getName() + " " +
-                harryPotter.authorToString(harryPotter.getAuthor()) + " " + harryPotter.getYear());
+                harryPotter.authorToString() + " " + harryPotter.getYear());
 
         //изменяем год публикации
         harryPotter.setYear(1997);
@@ -21,9 +21,6 @@ public class Main {
         Author johnTolkien = new Author("Tolkien","John");
         Book hobbit = new Book ("The Hobbit",johnTolkien, 1937);
         System.out.println("The Hobbit: " + hobbit.getName() + " " +
-                hobbit.authorToString(hobbit.getAuthor()) + " " + hobbit.getYear());
-
-
-
+                hobbit.authorToString() + " " + hobbit.getYear());
     }
 }
