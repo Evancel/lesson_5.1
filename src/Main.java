@@ -22,5 +22,10 @@ public class Main {
         Book hobbit = new Book ("The Hobbit",johnTolkien, 1937);
         System.out.println("The Hobbit: " + hobbit.getName() + " " +
                 hobbit.authorToString() + " " + hobbit.getYear());
+
+        //task2: добавили методы toString, equals, hashCode
+        System.out.println("Task2");
+        System.out.println(harryPotter);
+        System.out.println(hobbit);
     }
 }
